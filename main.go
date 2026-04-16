@@ -1,8 +1,12 @@
 package main
 
-import interfaces "github/arlissilva/estudoGolang/basico/interface"
+import (
+	"github/arlissilva/estudoGolang/arquivos"
+)
 
 func main() {
-	interfaces.InterfacesVazias()
+	arquivos.CriarArquivo()
+	arquivos.EscreverArquivo()
+	arquivos.LerArquivo()
 
 }
