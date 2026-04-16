@@ -1,12 +1,10 @@
 package main
 
 import (
-	"github/arlissilva/estudoGolang/arquivos"
+	"github/arlissilva/estudoGolang/jsonbasico"
 )
 
 func main() {
-	arquivos.CriarArquivo()
-	arquivos.EscreverArquivo()
-	arquivos.LerArquivo()
+	jsonbasico.JsonDecode()
 
 }
