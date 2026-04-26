@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github/arlissilva/estudoGolang/jsonbasico"
+	"github/arlissilva/estudoGolang/apihttp/templates"
 )
 
 func main() {
-	jsonbasico.JsonDecode()
-
+	templates.TemplateEstado()
 }
