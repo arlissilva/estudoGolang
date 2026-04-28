@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	templates.TemplateEstado()
+	templates.TemplateMustFuncoes()
 }

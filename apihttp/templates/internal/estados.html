@@ -1,0 +1,33 @@
+
+
+{{ template "header.html" }}
+<h1>Estado</h1>
+    <table>
+        
+        <tr>
+            <th>Nome</th>
+            <th>Sigla</th>
+        </tr>
+        {{ range . }}
+        <tr>
+            <td>{{ .Name | Maiusculo }}</td>
+            <td>{{ .Uf | Maiusculo }}</td>
+        </tr>
+        {{ end }}
+    </table>
+    <h2>Estados se for RJ</h2>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Sigla</th>
+        </tr>
+        {{ range . }}
+            {{ if eq .Uf "RJ" }}
+            <tr>
+                <td>{{ .Name | Maiusculo }}</td>
+                <td>{{ .Uf | Maiusculo }}</td>
+            </tr>
+            {{ end }}
+        {{ end }}
+    </table>
+    {{ template "footer.html" }}
