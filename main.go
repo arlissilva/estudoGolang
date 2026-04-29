@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github/arlissilva/estudoGolang/apihttp/templates"
+	"github/arlissilva/estudoGolang/apihttp/pacoteHttp"
 )
 
 func main() {
-	templates.TemplateMustFuncoes()
+	pacoteHttp.HttpTimeout()
 }
