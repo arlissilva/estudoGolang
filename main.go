@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github/arlissilva/estudoGolang/apihttp/pacoteHttp"
+	"github/arlissilva/estudoGolang/contextEstudos"
 )
 
 func main() {
-	pacoteHttp.HttpTimeout()
+	contextEstudos.ContextServer()
 }
